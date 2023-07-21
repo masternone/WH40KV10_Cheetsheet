@@ -129,7 +129,7 @@ export const units: UnitsByFaction = {
         leadership: 6,
         objectiveControl: 1
       },
-      weapons: ['Heavy warpflamer', 'Hellfyre missile', 'Inferno combi-bolter', 'Soulreaper cannon', 'Warpsmite SOT', 'Force weapon', 'Prosperine khopesh'],
+      weapons: ['Heavy warpflamer', 'Hellfyre missile rack', 'Inferno combi-bolter', 'Soulreaper cannon', 'Warpsmite SOT', 'Force weapon', 'Prosperine khopesh'],
     },
     'Mutalith Vortex Beast': {
       composition: { 1: 145 },

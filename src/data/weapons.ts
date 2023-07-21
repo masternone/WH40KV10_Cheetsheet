@@ -336,7 +336,8 @@ export const weapons: WeaponDictionary = {
     skill: 3,
     strength: 9,
     armorPenetration: 2,
-    damage: 2
+    damage: 2,
+    keyWords: ['BLAST']
   },
   'Warp vortex - beam': {
     range: 24,
@@ -344,7 +345,8 @@ export const weapons: WeaponDictionary = {
     skill: 3,
     strength: 18,
     armorPenetration: 4,
-    damage: 'D6+6'
+    damage: 'D6+6',
+    keyWords: ['DEVASTATING WOUNDS']
   },
   'Warp vortex - torrent': {
     range: 12,
@@ -352,7 +354,8 @@ export const weapons: WeaponDictionary = {
     skill: 'N/A',
     strength: 6,
     armorPenetration: 1,
-    damage: 1
+    damage: 1,
+    keyWords: ['IGNORES COVER', 'TORRENT']
   },
   'Betentacled maw': {
     range: 'M',
