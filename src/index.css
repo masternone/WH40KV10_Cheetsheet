@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+    .should-this-print {
+        display: none;
+    }
+    .should-this-print:has(:checked) {
+        display: block;
+    }
+    input {
+        display: none;
+    }
+}

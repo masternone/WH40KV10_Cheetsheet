@@ -1,7 +1,6 @@
 import { Factions } from "../../data/utilityTypes.ts";
 import { units } from "../../data/units.ts";
 import Weapons from "../Weapons/Weapons.tsx";
-import React from "react";
 
 export interface UnitsProps {
   faction: Factions;
@@ -13,7 +12,8 @@ const Units = ({ faction }: UnitsProps) => {
     <>
       <h3 className="text-10 font-bold">{faction}</h3>
       {Object.entries(unitsDictionary!).map(([name, unitValues], index) => (
-        <React.Fragment key={index}>
+        <div className="should-this-print" key={index}>
+          <input type="checkbox" />
           <h4 className="text-8 font-bold">{name}</h4>
           <div className="grid grid-cols-units gap-5 border-t py-1">
             <div className="flex flex-wrap flex-col">{unitValues.abilities.map((ability, index) =>
@@ -46,7 +46,7 @@ const Units = ({ faction }: UnitsProps) => {
               <Weapons {...{ showHeader: index === 0, name }} key={index} />
             ))}</div>
           </div>
-        </React.Fragment>
+        </div>
       ))}
     </>
   )
